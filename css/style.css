@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background: hsla(246, 52%, 14%, 1);
+
+}
+
+/*--------------------------HEADER-------------------------------*/
+
+
+
+header {
+
+    background: hsla(246, 52%, 14%, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header a {
+
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2ms;
+
+}
+
+header nav ul {
+
+    list-style: none;
+    display: flex;
+
+
+}
+
+header ul li+li {
+
+    margin-left: 24px;
+
+}
+
+header a:hover {
+
+    color: rgb(0,140,255);
+}
+
+/*--------------------------IMG HEADER-------------------------------*/
+.img-header {
+    width: 5vh;
+    margin-top: 1vh;
+}
+
+/*--------------------------NAV CHECK BOX-------------------------------*/
+
+.nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+
+
+/*--------------------------CHECK BOX-------------------------------*/
+
+.group {
+    position: relative;
+}
+
+.input {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #ffffff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+
+/*--------------------------ESCRITAS-------------------------------*/
+
+
+
+.article1{
+    display: flex;
+    margin-left: 2vh;
+    font-size: xx-large;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.article2{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 4vh;
+    font-size: 5vh;
+    width: 79vh;
+
+}
+.article2 h2{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.texto-negrito{
+    color: rgb(0,140,255);
+}
+/*--------------------------BUTTON-------------------------------*/
+
+.shadow__btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(3, 55, 97);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 255, 225),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+  /*--------------------------aaaaaaa-------------------------------*/
+.section{
+    display: flex;
+}
+.section img{
+    display: flex;
+    justify-content: end;
+    margin-left: 20vh;
+
+}
