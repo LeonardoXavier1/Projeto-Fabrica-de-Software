@@ -1,78 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>GRAGAS.GG</title>
 </head>
+
 <body>
 
-    <header>
-        <img class="img-header" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png" alt="">
+    <header class="header">
+        <img class="img-header"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png" alt="">
 
         <nav>
             <ul>
-                <li class="escrita-header"> <a  href="#section1">DASHBOARD </a></li>
-                <li class="escrita-header"> <a href="" target="_blank">CONTATO</a></li>
-                <li class="escrita-header"> <a href="" target="_blank">AJUDA</a></li>
+                <li class="escrita-header"> <a href="#section1">DASHBOARD </a></li>
+                <li class="escrita-header"> <a href="https://github.com/LeonardoXavier1" target="_blank">CONTATO</a>
+                </li>
+                <li class="escrita-header"> <a href="https://github.com/LeonardoXavier1" target="_blank">AJUDA</a></li>
             </ul>
         </nav>
-
     </header>
-    
-<hr>
 
-<main>
-    <article class="article1">
-        <h1>GRAGAS.GG</h1>
-    </article >
+    <header class="mobile">
+        <nav>
+            <ul>
+                <li class="escrita-header"> <a href="#section1">DASHBOARD </a></li>
+                <li class="escrita-header"> <a href="https://github.com/LeonardoXavier1" target="_blank">CONTATO</a>
+                </li>
+                <li class="escrita-header"> <a href="https://github.com/LeonardoXavier1" target="_blank">AJUDA</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    
-<section class="section">
-<article class="article2">
-        <h2>
-            Esteja sempre um passo a frente com todas as <strong class="texto-negrito">informações</strong> possiveis a seu dispor !
-        </h2>
-        <button class="shadow__btn">
-            SAIBA MAIS 
-        </button>
-    </article> 
-    <figure><img src="  https://i.pinimg.com/originals/8f/48/8e/8f488edf91a16cb8e2515cb40bd01fdf.png" alt=""></figure>
-
-</section>
-
-<section class="section2">
-    <article class="article3">
-        <h2>
-            Saiba a <strong class="texto-negrito">qualquer momento</strong> quem está disputando seu campeonato preferido !
-        </h2>
-    </article>
-
-    <section class="image-container">
-         <figure><img src="Meu projeto (3).png" alt=""></figure>
-    </section>
-   
-
-</section>
-
-<table id="dados-table"></table>
-
-<section class="section3">
-
-    <article class="article3">
-        <h2>
-            Faça a sua <strong class="texto-negrito1">pesquisa</strong> em nosso DASHBOARD !
-        </h2>
-    </article>
-
-    <iframe class = "frame" id="section1" title="gragas.gg" width="1000" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=bc254778-cafc-4259-8e43-aa79076ebfd4&autoAuth=true&ctid=ff9c7474-421d-4957-8d47-c4b64dec87b5" frameborder="0" allowFullScreen="true"></iframe>
-</section>
+    <main>
+        <article class="article1" id="section2">
+            <h1>GRAGAS.GG</h1>
+        </article>
 
 
-</main>
-<script src="JS/dados.js"></script>
+        <section class="section">
+            <article class="article2">
+                <h2>
+                    Esteja sempre um passo a frente com todas as <strong class="texto-negrito">informações</strong>
+                    possiveis a seu dispor !
+                </h2>
+                <button class="shadow__btn">
+                    SAIBA MAIS
+                </button>
+            </article>
+            <figure><img class="img-gragas"
+                    src="  https://i.pinimg.com/originals/8f/48/8e/8f488edf91a16cb8e2515cb40bd01fdf.png" alt="">
+            </figure>
+            <figure class="figure-mobile"><img class="img-gragas2"
+                    src="  https://i.pinimg.com/originals/8f/48/8e/8f488edf91a16cb8e2515cb40bd01fdf.png" alt="">
+            </figure>
+
+        </section>
+
+        
+        <section class="section-mobile">
+            <article class="article3-mobile">
+                <h2>
+                    Saiba a <strong class="texto-negrito">qualquer momento</strong> quem está disputando seu campeonato
+                    preferido !
+                </h2>
+            </article>
+
+            <section class="image-container-mobile">
+                <figure><img class="img2" src="Meu projeto (3).png" alt=""></figure>
+            </section>
+
+        </section>
+
+
+        <section class="section2">
+            <article class="article3">
+                <h2>
+                    Saiba a <strong class="texto-negrito">qualquer momento</strong> quem está disputando seu campeonato
+                    preferido !
+                </h2>
+            </article>
+
+            <section class="image-container">
+                <figure><img class="img2" src="Meu projeto (3).png" alt=""></figure>
+            </section>
+
+        </section>
+
+
+
+            <section class="section3">
+
+                <article class="article3">
+                    <h2>
+                        Faça a sua <strong class="texto-negrito1">pesquisa</strong> em nosso DASHBOARD !
+                    </h2>
+                </article>
+
+                <iframe class="frame" id="section1" title="gragas.gg" width="1000" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=bc254778-cafc-4259-8e43-aa79076ebfd4&autoAuth=true&ctid=ff9c7474-421d-4957-8d47-c4b64dec87b5"
+                    frameborder="0" allowFullScreen="true"></iframe>
+                    <button class="A"><a href="#section2">VOLTAR ↑</a>
+
+            </section>
+
+
+
+              <!---------------------------- MOBILE  ------------------------------>
+
+
+              
+
+
+            </button>
+
+    </main>
+    <script src="JS/dados.js"></script>
+    <script src="JS/teste.js"></script>
 </body>
+
 </html>

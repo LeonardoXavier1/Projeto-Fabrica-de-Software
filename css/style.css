@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 
 }
 
@@ -11,51 +12,44 @@ body {
     height: 100vh;
     font-family: sans-serif;
     background: hsla(246, 52%, 14%, 1);
-
-
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-
 /*--------------------------HEADER-------------------------------*/
 
-
-
 header {
-
-    background: hsla(246, 52%, 14%, 1);
+    background: rgba(29, 24, 80, 0.502);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    gap: 5vh;    
 }
 
 header a {
-
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.2ms;
-
+    transition: color 0.2s;
 }
 
 header nav ul {
-
     list-style: none;
     display: flex;
-
-
 }
 
 header ul li+li {
-
     margin-left: 24px;
-
 }
 
 header a:hover {
-
-    color: rgb(0,140,255);
+    color: rgb(0, 140, 255);
 }
 
 /*--------------------------IMG HEADER-------------------------------*/
+
 .img-header {
     width: 5vh;
     margin-top: 1vh;
@@ -69,9 +63,6 @@ header a:hover {
     justify-content: center;
     height: 10vh;
 }
-
-
-
 
 /*--------------------------CHECK BOX-------------------------------*/
 
@@ -164,21 +155,16 @@ label {
     from {
         background: #5264AE;
     }
-
     to {
         width: 0;
         background: transparent;
     }
 }
 
-
-
-
 /*--------------------------ESCRITAS-------------------------------*/
 
-
-
-.article1{
+.article1 {
+    margin-top: 2vh;
     display: flex;
     margin-left: 2vh;
     font-size: xx-large;
@@ -186,37 +172,33 @@ label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.article2{
+.article2 {
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 4vh;
     font-size: 5vh;
     width: 79vh;
-
 }
-.article2 h2{
+
+.article2 h2 {
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
 
-.texto-negrito{
-    color: rgb(0,140,255);
+.texto-negrito {
+    color: rgb(0, 140, 255);
 }
 
-.texto-negrito1{
+.texto-negrito1 {
     color: rgb(255, 0, 0);
-
 }
 
-.article3{
+.article3 {
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 4vh;
     font-size: 5vh;
     width: 79vh;
-
-}
-.article3{
     margin-top: 38vh;
     margin-bottom: 5vh;
     margin-left: 65vh;
@@ -225,11 +207,9 @@ label {
 .image-container {
     margin-top: 10vh;
     display: flex;
-    justify-content: center;    
-    
+    justify-content: center;
 }
 
-  
 /*--------------------------BUTTON-------------------------------*/
 
 .shadow__btn {
@@ -244,25 +224,61 @@ label {
     text-transform: uppercase;
     transition: 0.5s;
     transition-property: box-shadow;
-  }
-  
-  .shadow__btn {
-    background: rgb(3, 55, 97);
-    box-shadow: 0 0 25px rgb(0,140,255);
-  }
-  
-  .shadow__btn:hover {
-    box-shadow: 0 0 5px rgb(0, 255, 225),
-                0 0 25px rgb(0,140,255),
-                0 0 50px rgb(0,140,255),
-                0 0 100px rgb(0,140,255);
-  }
+}
 
-  /*--------------------------section-------------------------------*/
-.section{
+.shadow__btn {
+    background: rgb(3, 55, 97);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 255, 225), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+
+.A a{
+    text-decoration: none;
+}
+
+.A{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    margin-left: 94vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.A a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+
+.A {
+    background: rgb(3, 55, 97);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.A:hover {
+    box-shadow: 0 0 5px rgb(0, 255, 225), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+/*--------------------------section-------------------------------*/
+
+.section {
     display: flex;
 }
-.section img{
+
+.section img {
     display: flex;
     justify-content: end;
     margin-left: 39vh;
@@ -270,17 +286,122 @@ label {
     width: 80vh;
 }
 
-  /*--------------------------frame-------------------------------*/
+/*--------------------------frame-------------------------------*/
 
-
-.frame{
+.frame {
     display: flex;
-    justify-content: center; 
-    margin-left: 50vh;   
+    justify-content: center;
+    margin-left: 50vh;
     z-index: 10vh;
     margin-top: 5vh;
 }
 
-.section3{
+.section3 {
     margin-top: 30vh;
+    display: block !important;
+}
+
+.figure-mobile{
+    display: none;
+}
+
+.section-mobile{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+
+/*--------------------------mobile-------------------------------*/
+
+
+
+@media screen and (max-width: 767px) {
+
+    figure .img-gragas{
+        display: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+
+
+    .figure-mobile{
+        display: block;
+    }
+    .mobile{
+        display: block;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 10vh;
+        font-size: x-large;
+    }
+
+    .article1 h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 61vh;
+        margin-top: 10vh;
+    }
+
+    .section2{
+        display: none;
+    }
+
+    .section-mobile{
+        display: block;
+    }
+
+    .section-mobile .article-mobile{
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        font-size: 5vh;
+        margin-top: 38vh;
+        margin-bottom: 5vh;
+    }
+
+    .article3-mobile{
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 4vh;
+        font-size: 5vh;
+        width: 79vh;
+        margin-top: 38vh;
+        margin-bottom: 5vh;
+        margin-left: 56vh;
+    }
+
+    figure .img-gragas2{
+        width: 76vh;
+        margin-top: 20vh;
+        margin-left: 55vh;
+    }
+    .image-container{
+        display: none;
+    }
+
+    .img-header{
+        display: none;
+    }
+    
+    .article3{
+        margin-left: 50vh;
+
+    }
+
+    .frame{
+        margin-left: 24vh;
+    }
+
+    .A{
+        margin-left: 80vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
 }
